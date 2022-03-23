@@ -84,7 +84,7 @@
           <form
           id="contactForm"
           action="https://formspree.io/f/mvolqelr"
-          method="post"
+          method="POST"
           >
           <label>
             Your email:
@@ -110,7 +110,7 @@
             document.getElementsByTagName("form")[0].innerHTML = "<h1>Thank You! We will be in touch soon. 😀 </h1>";
           }
         };
-        xhr.open("post", "https://formspree.io/f/mvolqelr", true);
+        xhr.open("POST", "https://formspree.io/f/mvolqelr", true);
 	formData = new FormData();
 	formData.append('eamil', document.getElementsByName("email")[0].value)
 	formData.append('message', document.getElementsByName("message")[0].value)
