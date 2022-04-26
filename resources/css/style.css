@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Heebo:wght@400;500;700;900&display=swap");
 
 :root {
-  --primaryColor: #fffb00;
+  --primaryColor: #dfdfdf;
   --primaryDarkColor: #372958;
   --primaryHoverColor: #ffe600;
   --secondaryColor: #f9b000;
-  --baseColor: #ddd8c7;
+  --baseColor: #000000;
   --cardColor: #ac9f77;
   --baseFont: "Heebo", sans-serif;
-  --titleFont: "Courier Prime", monospace;
+  --titleFont: "Heebo", monospace;
   --regular: 400;
   --medium: 500;
   --bold: 700;
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background: rgb(20, 20, 20);
+  background: rgb(168, 210, 218);
   color: var(--baseColor);
   font-family: var(--baseFont);
   line-height: normal;
@@ -309,15 +309,15 @@ a,
 }
 
 .bannerUserImg img {
-  border-radius: 50%;
-  height: 100%;
+  border-radius: 40%;
+  height: 130%;
   object-fit: cover;
   position: relative;
-  width: 100%;
+  width: 80%;
 }
 
-.bannerUserImg:before {
-	background: #270949;
+/*.bannerUserImg:before {
+	background: #93ad3b;
 	border-radius: 50%;
 	content: "";
 	height: 100%;
@@ -326,7 +326,7 @@ a,
 	top: 13px;
   width: 100%;
 }
-
+*/
 .bannerBtnCol {
   padding-top: 15px;
 }
