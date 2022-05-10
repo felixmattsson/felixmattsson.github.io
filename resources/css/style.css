@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background: rgb(168, 210, 218);
+  background: rgb(23, 85, 97);
   color: var(--baseColor);
   font-family: var(--baseFont);
   line-height: normal;
@@ -309,11 +309,11 @@ a,
 }
 
 .bannerUserImg img {
-  border-radius: 40%;
-  height: 130%;
-  object-fit: cover;
+  border-radius: 60%;
+  height: 100%;
+  object-fit: contain;
   position: relative;
-  width: 80%;
+  width: 100%;
 }
 
 /*.bannerUserImg:before {
