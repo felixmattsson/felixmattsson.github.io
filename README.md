@@ -1,6 +1,6 @@
 # Introduction
 
-Portfolio Webiste for Felix Mattsson, inspired by the works of Klas Holmgren
+Webiste for Felix Mattsson, inspired by the works of Klas Holmgren
 
 
 
