@@ -155,23 +155,53 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <div class="w3-content" style="max-width:600px">
       <h4 class="w3-center"><b>Contact Me</b></h4>
       <p>Do you want to get in touch with me? Use the form below! :) I love meeting new people!</p>
-      <form action="/action_page.php" target="_blank">
+      <form action="https://formspree.io/f/mvolqelr" method="POST" target="_blank">
         <div class="w3-section">
           <label>Name</label>
           <input class="w3-input w3-border" type="text" name="Name" required>
         </div>
         <div class="w3-section">
           <label>Email</label>
-          <input class="w3-input w3-border" type="text" name="Email" required>
+          <input class="w3-input w3-border" type="text" name="Email" id="email" required>
         </div>
         <div class="w3-section">
           <label>Message</label>
-          <input class="w3-input w3-border" type="text" name="Message" required>
+          <textarea class="w3-input w3-border" type="text" name="Message" id="message" placeholder="Write something.." rows="6" required></textarea>
         </div>
         <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
       </form>
     </div>
   </div>
+
+  <section>
+    <div class="lightBg">
+      <div class="container">
+        <form
+        id="contactForm"
+        >
+        <!-- your other form fields go here -->
+        <button type="submit" class='btn btnPrimary'>Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  document.getElementsByTagName("form")[0].onsubmit = function(event) {
+event.preventDefault()
+      xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4) {
+          document.getElementsByTagName("form")[0].innerHTML = "<h1>Thank You! We will be in touch soon. 😀 </h1>";
+        }
+      };
+      xhr.open("POST", "https://formspree.io/f/mvolqelr", true);
+formData = new FormData();
+formData.append('eamil', document.getElementsByName("email")[0].value)
+formData.append('message', document.getElementsByName("message")[0].value)
+      xhr.send(formData);
+  }
+  </script>	
 
   <!-- Footer -->
   <footer class="w3-container w3-padding-32 w3-grey">  
@@ -182,16 +212,16 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       </div>
     
       <div class="w3-third">
-        <h3>BLOG POSTS</h3>
+        <h3>Links</h3>
         <ul class="w3-ul">
           <li class="w3-padding-16 w3-hover-black">
             <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Lorem</span><br>
+            <span class="w3-large">Github</span><br>
             <span>Sed mattis nunc</span>
           </li>
           <li class="w3-padding-16 w3-hover-black">
             <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Ipsum</span><br>
+            <span class="w3-large">Youtube</span><br>
             <span>Praes tinci sed</span>
           </li> 
         </ul>
