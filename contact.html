@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Felix Mattsson</title>
+    <meta name="Felix Mattsson" content="">
+    <link rel="home" href=""/>
+    <meta name="description" content="Portfolio for Felix Mattsson a coder.">
+    <meta name="keywords" content="Felix, Mattsson, Code">
+
+    <link rel="shortcut icon" type="image/x-icon" href="resources/images/icon.jpg">
+    <link rel="apple-touch-icon" type="image/jpg" href="resources/images/icon.jpg">
+    <!-- ================================
+      Start CSS
+      ================================= -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7.0.5/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <!-- ================================
+    End CSS
+    ================================= -->
+
+  </head>
+  <body>
+
+    <div id="particles-js" style="position: fixed; width: 100%; height: 100%  ;">
+    </div>
+    <!-- ================================
+    Start Navigation Bar
+    ================================= -->
+    <header>
+      <div class="headerCol">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col">
+              <div class="d-md-none">
+                <button class="navToggle">
+                  <span class="navToggle__text">Toggle Menu</span>
+                </button>
+              </div>
+              <div class="navCollapseCol">
+                <div class="navCol">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="myBooks.html">Book recommendations</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ================================
+    End Navigation Bar
+    ================================= -->
+
+    
+    <!-- ================================
+    Start Content
+    ================================= -->
+    <section>
+      <div class="innerPageBannerCol">
+        <div class="container">
+          <div class="row g-4 g-md-3  align-items-center">
+            <div class="col-md-6">
+              <div class="bannerContent">
+                <h1 class="xlTitle pb-md-3">Contact me below</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="lightBg">
+        <div class="container">
+          <form
+          id="contactForm"
+          action="https://formspree.io/f/mvolqelr"
+          method="POST"
+          >
+          <label>
+            Your email:
+            <input type="email" id="email" name="email" placeholder="Email">
+          </label>
+          <label>
+            Your message:
+            <textarea name="message" placeholder="Write something.." rows="6"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button type="submit" class='btn btnPrimary'>Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script>
+    document.getElementsByTagName("form")[0].onsubmit = function(event) {
+	event.preventDefault()
+        xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState == 4) {
+            document.getElementsByTagName("form")[0].innerHTML = "<h1>Thank You! We will be in touch soon. 😀 </h1>";
+          }
+        };
+        xhr.open("POST", "https://formspree.io/f/mvolqelr", true);
+	formData = new FormData();
+	formData.append('eamil', document.getElementsByName("email")[0].value)
+	formData.append('message', document.getElementsByName("message")[0].value)
+        xhr.send(formData);
+    }
+    </script>	
+
+    
+    
+
+
+    <!-- stats.js -->
+    <script src="resources/js/particles.js"></script>
+    <script src="resources/js/app.js"></script>
+    <!--<link rel="stylesheet" media="screen" href="css/style.css">-->
+    <script src="resources/js/lib/stats.js"></script>
+    <script>
+      var count_particles, stats, update;
+      stats = new Stats;
+      stats.setMode(0);
+      stats.domElement.style.position = 'absolute';
+      stats.domElement.style.left = '0px';
+      stats.domElement.style.top = '0px';
+      document.body.appendChild(stats.domElement);
+      count_particles = document.querySelector('.js-count-particles');
+      update = function() {
+        stats.begin();
+        stats.end();
+        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+          count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+    </script>
+
+    <!-- ================================
+    Start Footer
+    ================================= -->
+    <footer>
+      <div class="footerCol">
+        <div class="container">
+          <ul class="socialCol">
+            <li><a href="https://www.facebook.com/felix.mattsson.50//"><i class="fa fa-3x fa-facebook-official" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/felixxmattsson/"><i class="fa fa-3x fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/felix-mattsson-a73b99151/"><i class="fa fa-3x fa-linkedin-square" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/felixmattsson"><i class="fa fa-3x fa-github" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- ================================
+    End Footer
+    ================================= -->
+
+    <!-- ================================
+    Start Scripts
+    ================================= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@7.0.5/swiper-bundle.min.js"></script>
+    <script src="resources/js/script.js"></script>
+
+
+    <!-- ================================
+    End Scripts
+    ================================= -->
+  </body>
+</html>
