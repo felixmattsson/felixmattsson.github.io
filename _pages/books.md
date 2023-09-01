@@ -73,7 +73,7 @@ Add summary here
 
 6. ##### **The Life You Can Save**
 by *Peter Singer*
-<img style="float: right;" src="\assets\images\books\Book_BP.jpeg" height=150 width=150>
+<img style="float: right;" src="\assets\images\books\book_BP.jpeg" height=150 width=150>
 \
 Add summary here
 \
