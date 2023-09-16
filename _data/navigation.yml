@@ -6,5 +6,9 @@ main:
     url: /posts/
   - title: "Book recommendations"
     url: /books/
-  - title: "Earn money on betting welcome offers"
-    url: /bonusbetting/
+  - title: "CV"
+    url: /online-cv/
+
+
+#  - title: "Earn money on betting welcome offers"
+#    url: /bonusbetting/
