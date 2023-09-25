@@ -2,7 +2,8 @@
 title: 7 Actions for Consuming More Books (to Learn and Improve Your Life)
 toc: true
 toc_label: "Table of Content"
-
+categories:
+  - personal development
 ---
 
 Books are a great way of learning and improving your life, but it is all too easy to down-prioritize them to spend time on more urgent, but less impactful things. In this video, you will find my 7 actions for how to be more intentional with consuming books and making sure that you get it done as much as you want. 

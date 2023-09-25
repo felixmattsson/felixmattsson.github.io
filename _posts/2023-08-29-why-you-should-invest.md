@@ -2,6 +2,9 @@
 title: Why You Should Invest Your Money
 toc: true
 toc_label: "Table of Content"
+categories:
+  - personal finance
+
 ---
 
 Since a few years back, I have been convinced that investing money is a good thing to do and that I want to do more of, and here I'll put forth some of my reasons for why.
